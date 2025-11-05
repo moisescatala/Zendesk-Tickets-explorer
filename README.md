@@ -2,6 +2,12 @@
 
 A secure React web application that provides an intuitive interface to interact with the Zendesk Support API for exploring and managing ticketing information.
 
+## 🚀 Live Demo
+
+**Access the live application:** [https://moisescatala.github.io/Zendesk-Tickets-explorer/](https://moisescatala.github.io/Zendesk-Tickets-explorer/)
+
+The application is automatically deployed to GitHub Pages on every push to the main branch.
+
 ## Features
 
 ### 🔐 Secure Authentication
@@ -143,6 +149,7 @@ Zendesk-Tickets-explorer/
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages (manual deployment)
 
 ## Building for Production
 
@@ -151,6 +158,30 @@ npm run build
 ```
 
 The production-ready files will be in the `dist/` directory.
+
+## Deployment
+
+### Automatic Deployment (GitHub Actions)
+
+The application is configured with GitHub Actions for automatic deployment to GitHub Pages:
+
+1. Push changes to the `main` or `master` branch
+2. GitHub Actions will automatically build and deploy the application
+3. Access the live site at: `https://[username].github.io/Zendesk-Tickets-explorer/`
+
+**Note:** Ensure GitHub Pages is enabled in your repository settings:
+- Go to: **Settings** → **Pages**
+- Source: **GitHub Actions**
+
+### Manual Deployment
+
+To manually deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+This will build the application and push it to the `gh-pages` branch.
 
 ## Browser Support
 
